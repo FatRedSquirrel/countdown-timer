@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: "Montserrat";
+   margin: 0;
+   background-image: url(img/sean-paul-kinnear-f44QzL2ynzo-unsplash.jpg);
+   background-size: cover;
+   min-height: 180vh;
+   background-position: center center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 300px;
+}
+
+h1{
+   font-weight: normal;
+   font-size: 4rem;
+   text-align: center;
+   margin-top: 60px;
+}
+
+.countdown-container {
+   display: grid;
+   grid-template-columns: repeat(4, min-content);
+}
+
+@media (max-width: 600px) {
+   .countdown-container {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+   }
+}
+
+.big-text {
+   font-weight: bold;
+   font-size: 6rem;
+   line-height: 1;
+   margin: 0 2rem;
+}
+
+.countdown-el{
+   text-align: center;
+}
+
+.countdown-el span{
+   font-size: 1.3rem;
+}
